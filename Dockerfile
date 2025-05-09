@@ -22,4 +22,4 @@ RUN /opt/venv/bin/pip install -r requirements.txt
 
 RUN /opt/venv/bin/pip freeze
 
-CMD ["/opt/venv/bin/python", "bot.py"]
+CMD ["/opt/venv/bin/python3", "bot.py"]
