@@ -18,8 +18,8 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")  # Ganti dengan API key OpenAI kamu
 REPLICATE_API_TOKEN = os.getenv("REPLICATE_API_TOKEN")  # Ganti dengan API token Replicate kamu
 
 # Config lainnya
-MAX_DAILY_USES = 10  # Maksimum penggunaan per hari
-POLLING_TIMEOUT = 120  # Timeout dalam detik untuk polling API
+MAX_DAILY_USES = 3  # Maksimum penggunaan per hari
+POLLING_TIMEOUT = 240  # Timeout dalam detik untuk polling API
 POLL_INTERVAL = 2  # Interval polling dalam detik
 
 # Setup
