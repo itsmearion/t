@@ -18,5 +18,6 @@ ENV PATH="/opt/venv/bin:$PATH"
 RUN /opt/venv/bin/pip install --upgrade pip
 RUN /opt/venv/bin/pip install -r requirements.txt
 
-# Jalankan bot
+RUN /opt/venv/bin/pip freeze
+
 CMD ["/opt/venv/bin/python", "bot.py"]
