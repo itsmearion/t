@@ -14,8 +14,9 @@ RUN python -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
 # Install pip dan package
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+# Install pip dan package dalam virtualenv
+RUN /opt/venv/bin/pip install --upgrade pip
+RUN /opt/venv/bin/pip install -r requirements.txt
 
 # Jalankan bot
-CMD ["python", "bot.py"]
+CMD ["/opt/venv/bin/python", "bot.py"]
