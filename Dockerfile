@@ -1,4 +1,6 @@
-# Gunakan image python yang stabil
+# Rebuild trigger
+
+
 FROM python:3.10-slim
 
 # Install dependensi dasar
