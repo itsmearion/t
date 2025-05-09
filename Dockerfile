@@ -19,6 +19,7 @@ ENV PATH="/opt/venv/bin:$PATH"
 # Install pip dan package dalam virtualenv
 RUN /opt/venv/bin/pip install --upgrade pip
 RUN /opt/venv/bin/pip install -r requirements.txt
+RUN /opt/venv/bin/pip install aiogram==2.25.2
 
 RUN /opt/venv/bin/pip freeze
 
