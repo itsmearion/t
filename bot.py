@@ -13,9 +13,9 @@ import time
 from datetime import datetime, timedelta
 
 # Konfigurasi API langsung (tanpa env)
-BOT_TOKEN = "YOUR_BOT_TOKEN"  # Ganti dengan token bot kamu
-OPENAI_API_KEY = "YOUR_OPENAI_API_KEY"  # Ganti dengan API key OpenAI kamu
-REPLICATE_API_TOKEN = "YOUR_REPLICATE_API_TOKEN"  # Ganti dengan API token Replicate kamu
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # Ganti dengan token bot kamu
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")  # Ganti dengan API key OpenAI kamu
+REPLICATE_API_TOKEN = os.getenv("REPLICATE_API_TOKEN")  # Ganti dengan API token Replicate kamu
 
 # Config lainnya
 MAX_DAILY_USES = 10  # Maksimum penggunaan per hari
